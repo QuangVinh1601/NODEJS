@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
-    "test": "test"
+    "test": "test",
+    "fake": "node src/fake.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/",
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "jest": "^28.1.3",
     "nodemon": "^2.0.19",
     "supertest": "^6.2.4"
@@ -31,7 +33,6 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "faker": "^6.6.6",
     "helmet": "^5.1.1",
     "jquery": "^3.7.1",
     "jsonwebtoken": "^8.5.1",

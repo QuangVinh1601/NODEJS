@@ -1,4 +1,4 @@
-import faker from 'faker';
+import { faker } from '@faker-js/faker'
 import { MongoClient } from 'mongodb';
 
 async function createFakeEmployees() {
@@ -18,7 +18,7 @@ async function createFakeEmployees() {
     paidToDate: faker.datatype.number({ min: 0, max: 10000 }),
     paidLastYear: faker.datatype.number({ min: 0, max: 10000 }),
     payRate: faker.datatype.number({ min: 15, max: 50 }),
-    payRateId: faker.datatype.uuid(),
+    payRateId: faker.datatype.number({ min: 1, max: 100 }),
     createdAt: new Date(),
     updatedAt: new Date(),
   }));
